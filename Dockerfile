@@ -6,6 +6,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+# КОПИРУЕМ ВСЁ (включая папку handlers)
 COPY . .
 
 CMD ["python", "app.py"]
